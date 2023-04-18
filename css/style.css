@@ -11,7 +11,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .container {
@@ -27,7 +29,7 @@ img {
 .header {
   grid-area: header;
   background: linear-gradient(135deg, #7e46f1, #a575ff);
-  padding: 2rem;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -84,15 +86,32 @@ img {
 }
 
 
-
+/*C*/
 .content {
   grid-area: content;
 }
 
+
+
+/*A*/
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
 
+/*F*/
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #7e46f1, #a575ff);
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
 }
