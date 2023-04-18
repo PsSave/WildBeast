@@ -12,7 +12,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -89,9 +89,124 @@ img {
 /*C*/
 .content {
   grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
+.col-expandida {
+  grid-column: 1/-1;
+}
 
+.wolf1 {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.wolf2 {
+  align-self: end;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.info p + p{
+  margin-top: 30px;
+}
+
+.titulo {
+  color: #b07dfb;
+}
+.titulo h1{
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-size: 1.2em;
+  font-style: italic;
+}
+    /*caracteristicas*/
+    .caracteristicas {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .caracteristicas > div {
+      width: 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #7e46f1, #a575ff);
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px 0px rgba(176, 125, 251, .7);
+      position: relative;
+    }
+
+    .caracteristicas span {
+      display: block;
+      color: #b07dfb;
+
+    }
+
+    .caracteristicas >div:first-child {
+      margin-right: 30px;
+    }
+
+    .numero {
+      color: #b07dfb;
+      font-size: 3em;
+      line-height: 1;
+      margin: 10px auto;
+    }
+
+    .rotulo {
+      background: white;
+      border-radius: 0 0 5px 5px;
+      padding: 5px 0;
+      position: relative;
+      top: 2px;
+    }
+
+.destaque {
+  font-size: .95em;
+  color: #b07dfb;
+  max-width: 16em;
+}
+
+.citacao, .atributos {
+  align-self: start;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(176, 125, 251, .7);
+  background: linear-gradient(135deg, #7e46f1, #a575ff);
+}
+
+.citacao p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.atributos li{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
 
 /*A*/
 .anuncios {
@@ -113,5 +228,4 @@ img {
   color: white;
   text-align: center;
   padding: 30px;
-  font-size: 18px;
 }
