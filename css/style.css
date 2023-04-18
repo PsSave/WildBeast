@@ -11,7 +11,7 @@ a {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
 }
 
 .container {
@@ -24,9 +24,43 @@ img {
   ;
 }
 
+/*H*/
 .header {
   grid-area: header;
+  background: linear-gradient(135deg ,#7E46F1, #A575FF);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
+
+.logo {
+  max-width: 200px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125em;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.header nav ul li a:hover {
+  background: rgba(0, 0, 0, .5);
+}
+
+.header li + li {
+  margin-left: 30px;
+}
+
 
 .sidnav {
   grid-area: sidnav;
@@ -43,3 +77,5 @@ img {
 .footer {
   grid-area: footer;
 }
+
+
